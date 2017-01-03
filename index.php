@@ -8,7 +8,7 @@
  * Find your timezone here
  * http://php.net/manual/en/timezones.php
  */
-	$timezone = "Africa/Abidjan";
+	$timezone = "Africa/Dar_es_Salaam";
 	if(function_exists('date_default_timezone_set')) date_default_timezone_set($timezone);
 	define('TIMEZONE', $timezone);
 
@@ -30,7 +30,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
 	//define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-	define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', 'development');
 
 /*
  *---------------------------------------------------------------
@@ -90,7 +90,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = 'application';
+	$application_folder = 'application/';
 
 /*
  *---------------------------------------------------------------

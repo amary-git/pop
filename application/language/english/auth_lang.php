@@ -47,6 +47,7 @@ $lang['avatar_updated']                             = "Avatar successfully updat
 $lang['registration_is_disabled']                   = "Account Registration is closed.";
 $lang['login_to_your_account']                      = "Please login to your account.";
 $lang['pw']                                         = "Password";
+$lang['username']                                  = "Username";
 $lang['remember_me']                                = "Remember me";
 $lang['forgot_your_password']                       = "Forgot your password?";
 $lang['dont_worry']                                 = "Don't worry!";

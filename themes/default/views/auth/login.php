@@ -62,8 +62,8 @@
                     <div class="textbox-wrap">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="email" required="required" class="form-control" name="identity"
-                                   placeholder="<?= lang('email') ?>"/>
+                            <input type="text" required="required" class="form-control" name="identity"
+                                   placeholder="<?= lang('username') ?>"/>
                         </div>
                     </div>
                     <div class="textbox-wrap">
