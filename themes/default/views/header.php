@@ -142,38 +142,7 @@
                                                           data-placement="left" href="<?= site_url('calendar') ?>"><i
                                     class="fa fa-calendar"></i></a></li>
                     <?php } ?>
-                    <li class="dropdown hidden-sm">
-                        <a class="btn tip" title="<?= lang('styles') ?>" data-placement="left" data-toggle="dropdown"
-                           href="#">
-                            <i class="fa fa-css3"></i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li class="bwhite noPadding">
-                                <a href="#" id="fixed" class=""><i class="fa fa-angle-double-left"></i> <span
-                                        id="fixedText">Fixed</span></a> <a href="#" id="cssLight" class="grey"><i
-                                        class="fa fa-stop"></i> Grey</a> <a href="#" id="cssBlue" class="blue"><i
-                                        class="fa fa-stop"></i> Blue</a> <a href="#" id="cssBlack" class="black"><i
-                                        class="fa fa-stop"></i> Black</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown hidden-xs">
-                        <a class="btn tip" title="<?= lang('language') ?>" data-placement="left" data-toggle="dropdown"
-                           href="#">
-                            <img src="<?= base_url('assets/images/' . $Settings->language . '.png'); ?>" alt="">
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <?php $scanned_lang_dir = array_map(function ($path) {
-                                return basename($path);
-                            }, glob(APPPATH . 'language/*', GLOB_ONLYDIR));
-                            foreach ($scanned_lang_dir as $entry) { ?>
-                                <li><a href="<?= site_url('welcome/language/' . $entry); ?>"><img
-                                            src="<?= base_url(); ?>assets/images/<?= $entry; ?>.png"
-                                            class="language-img"> &nbsp;&nbsp;<?= ucwords($entry); ?></a></li>
-                            <?php } ?>
-                        </ul>
-
-                    </li>
+                    
                     
                     <?php if (($Owner || $Admin) && ($qty_alert_num > 0 || $exp_alert_num > 0)) { ?>
                         <li class="dropdown hidden-sm">
